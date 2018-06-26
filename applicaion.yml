@@ -7,12 +7,12 @@ spring:
 
 spring: 
  profiles: dev
- applicction: 
+ application: 
   name: microservice-config-aoao-dev
 
 ---
 
 spring: 
  profiles: test
- applicction: 
+ application: 
   name: microservice-config-aoao-test
