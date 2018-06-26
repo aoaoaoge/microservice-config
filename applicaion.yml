@@ -2,16 +2,12 @@ spring:
  profiles: 
   active:
    - dev
-
 ---
-
 spring: 
  profiles: dev
  application: 
   name: microservice-config-aoao-dev
-
 ---
-
 spring: 
  profiles: test
  application: 
