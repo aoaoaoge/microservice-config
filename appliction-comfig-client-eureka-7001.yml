@@ -13,15 +13,15 @@ spring:
 
 eureka:
  instance:
-   hostname: crmEureka7001.com
+  hostname: crmEureka7001.com
  client:
-   register-with-eureka: false
-   fetch-registry: false
-   service-url:
-    defaultZone: http://crmEureka7001.com:7001/eureka/
+  register-with-eureka: false
+  fetch-registry: false
+  service-url:
+   defaultZone: http://crmEureka7001.com:7001/eureka/
 ---
 server:
-  port: 7011
+ port: 7011
 
 spring: 
  profiles: test
@@ -29,10 +29,10 @@ spring:
    name: microservice-config-client-eureka7001
 
 eureka:
-  instance:
-   hostname: crmEureka7001.com
-  client:
-   register-with-eureka: false
-   fetch-registry: false
-   service-url:
-    defaultZone: http://crmEureka7001.com:7001/eureka/
+ instance:
+  hostname: crmEureka7001.com
+ client:
+  register-with-eureka: false
+  fetch-registry: false
+  service-url:
+   defaultZone: http://crmEureka7001.com:7001/eureka/
