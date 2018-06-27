@@ -13,7 +13,7 @@ spring:
 eureka: 
  client: 
   service-url: 
-   defaultZone: http://crmEureka7001.com:7002/eureka/,http://crmEureka7002.com:7002/eureka/
+   defaultZone: http://crmEureka7001.com:7001/eureka/,http://crmEureka7002.com:7002/eureka/
 
 ---
 
@@ -26,4 +26,4 @@ spring:
 eureka: 
  client: 
   service-url: 
-   defaultZone: http://crmEureka7001.com:7002/eureka/,http://crmEureka7002.com:7002/eureka/
+   defaultZone: http://crmEureka7001.com:7001/eureka/,http://crmEureka7002.com:7002/eureka/

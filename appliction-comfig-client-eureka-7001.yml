@@ -1,0 +1,34 @@
+spring: 
+ profiles: 
+  active:
+   - dev
+---
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: localhost
+spring: 
+ profiles: dev
+ application: 
+   name: microservice-config-client-eureka7001
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+     defaultZone: http://crmEureka7002.com:7002/eureka/
+---
+server:
+  port: 7011
+eureka:
+  instance:
+    hostname: localhost
+spring: 
+ profiles: test
+ application: 
+   name: microservice-config-client-eureka7001
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+     defaultZone: http://crmEureka7002.com:7002/eureka/
